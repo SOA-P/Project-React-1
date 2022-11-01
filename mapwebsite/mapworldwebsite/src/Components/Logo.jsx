@@ -1,15 +1,11 @@
 import React from 'react';
 
-
-
 const Logo = () => {
     return (
-        <div>
             <div className="logo">
-                <img src="" alt="Logo React" />
+                <img src="./logo192.png" alt="logo react" />
                 <h3>Select Country</h3>
             </div>
-        </div>
     );
 };
 
