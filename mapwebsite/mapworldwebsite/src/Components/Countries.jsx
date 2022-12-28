@@ -4,10 +4,12 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import Card from './Card';
 
+
+
 const Countries = () => {
 
     const [data, setData] = useState([]);
-    const [rangeValue, setRangeValue] = useState(36);
+    const [rangeValue, setRangeValue] = useState(25);
     const [selectedRadio , setSelectedRadio] = useState("")
     const radios = ["Africa", "America", "Asia", "Europe", "Oceania"];
 
@@ -22,7 +24,7 @@ const Countries = () => {
                 {radios.map((continents) =>( 
                     <li>
                         <input type="radio" id={continents} name="continentsRadio" checked={continents === selectedRadio} onChange={(e)=> setSelectedRadio(e.target.id)} />
-                        <label htmlFor={continents}>{continents} </label>
+                        <label htmlFor={continents}>{continents}</label>
                     </li>
                 ))}
             </ul>
